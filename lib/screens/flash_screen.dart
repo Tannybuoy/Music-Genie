@@ -446,7 +446,7 @@ class _FlashCardsPageState extends State<FlashCardsPage> {
         child: RaisedButton(
           color: musicGreen,
           textColor: Colors.white,
-          child: Text('Video Tutorials'),
+          child: Text('Video Explanations'),
           onPressed: () {
             Navigator.push(
               context,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
-import 'package:musicgenie/screens/flash_screen.dart';
+import 'package:musicgenie/screens/finalvideo.dart';
 
 class VideoTutorial extends StatefulWidget {
   @override
@@ -280,11 +280,11 @@ class _VideoTutorialState extends State<VideoTutorial> {
         child: RaisedButton(
           color: musicGreen,
           textColor: Colors.white,
-          child: Text('Flash Cards'),
+          child: Text('Watch Demo Video'),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => FlashCardsPage()),
+              MaterialPageRoute(builder: (context) => FinalVideo()),
             );
           },
         ),

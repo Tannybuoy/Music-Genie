@@ -74,14 +74,14 @@ class _MusicPlayerState extends State<MusicPlayer>
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => VideoTutorial(),
+                        builder: (context) => MusicPlayer(),
                       ),
                     );
                   } else {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => VideoTutorial(),
+                        builder: (context) => MusicPlayer(),
                       ),
                     );
                   }
