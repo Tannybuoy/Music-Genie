@@ -29,7 +29,7 @@ This year's Nobel Prize in Chemistry was for a method developed for genome editi
 I built it using flutter and dart. I first did basic pen-paper wireframing, post which I made a User Experience flow in Adobe XD. Then I made a Flutter project in Android Studio. For most issues faced I used stackoverflow.
 Then while coding, I explored the need for various plugins and decided to define a tasklist for myself
 
-### Tasklist identified
+#### Tasklist identified
 
 - [ ] Youtube API for videos
 - [x] Lottie for Animated gifs
