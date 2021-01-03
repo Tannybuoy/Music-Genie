@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SizedBox(height: 200),
+            SizedBox(height: 164),
             Container(
               padding: EdgeInsets.all(20),
               child: TextField(
@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
+              padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -38,7 +38,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 24),
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
@@ -57,22 +57,24 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              child: Row(
-                children: <Widget>[
-                  Text('Do not have account?'),
-                  FlatButton(
-                    textColor: musicGreen,
-                    child: Text(
-                      'Sign Up',
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    onPressed: () {
-                      //signup screen
-                    },
-                  )
-                ],
-                mainAxisAlignment: MainAxisAlignment.center,
+            Flexible(
+              child: Container(
+                child: Row(
+                  children: <Widget>[
+                    Text('Do not have account?'),
+                    FlatButton(
+                      textColor: musicGreen,
+                      child: Text(
+                        'Sign Up',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      onPressed: () {
+                        //signup screen
+                      },
+                    )
+                  ],
+                  mainAxisAlignment: MainAxisAlignment.center,
+                ),
               ),
             ),
           ],

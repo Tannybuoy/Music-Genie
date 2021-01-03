@@ -43,14 +43,14 @@ class OnboardingScreen extends StatelessWidget {
           decoration: pageDecoration,
         ),
         PageViewModel(
-          title: "Keyboard Tutorials",
-          body: "Watch videos to learn how to play the keyboard.",
+          title: "Instrument Tutorials",
+          body: "Watch videos to learn how to play the keyboard, guitar and more.",
           image: _buildImage('assets/images/watchtutorial.png'),
           decoration: pageDecoration,
         ),
         PageViewModel(
           title: "Visualise Music",
-          body: "Play songs which use 4 chords to visualise them using DNA sequence!",
+          body: "Play songs which use 4 chords and visualise them using DNA sequence!",
           image: _buildImage('assets/images/watchmusic.png'),
           decoration: pageDecoration,
         ),

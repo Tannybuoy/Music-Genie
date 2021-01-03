@@ -7,7 +7,7 @@ class SplashScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 5,
+      seconds: 10,
       navigateAfterSeconds: OnboardingScreen(),
       title: Text(
         'Music is in your Genes!',

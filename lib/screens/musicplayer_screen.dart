@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
 import 'package:musicgenie/dialogs.dart';
 import 'package:flutter/widgets.dart';
-import 'package:musicgenie/screens/videotutorials_screen.dart';
 import 'package:musicgenie/screens/genechord_screen.dart';
 import 'package:lottie/lottie.dart';
 import 'package:share/share.dart';
+import 'package:musicgenie/screens/flash_screen.dart';
 
 class MusicPlayer extends StatefulWidget {
   @override
@@ -21,6 +21,22 @@ class _MusicPlayerState extends State<MusicPlayer>
       appBar: AppBar(
         title: Text('Music Player'),
         backgroundColor: musicGreen,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.white,
+              size: 30.0,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardsPage()),
+              );
+
+            },
+          )
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,7 +116,7 @@ class _MusicPlayerState extends State<MusicPlayer>
               RaisedButton(
                 color: musicGreen,
                 textColor: Colors.white,
-                child: Text("Tutorial"),
+                child: Text("Gene Chords"),
                 onPressed: () {
                   Navigator.push(
                     context,

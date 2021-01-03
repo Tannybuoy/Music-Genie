@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
 import 'package:musicgenie/screens/loading.dart';
+import 'package:musicgenie/screens/flash_screen.dart';
 
 class Visualiser extends StatefulWidget {
   @override
@@ -17,6 +18,22 @@ class _VisualiserState extends State<Visualiser> {
       appBar: AppBar(
         title: Text('DNA Visualiser'),
         backgroundColor: musicGreen,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.white,
+              size: 30.0,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardsPage()),
+              );
+
+            },
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(

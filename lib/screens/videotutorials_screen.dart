@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
 import 'package:musicgenie/screens/finalvideo.dart';
+import 'package:musicgenie/screens/flash_screen.dart';
 
 class VideoTutorial extends StatefulWidget {
   @override
@@ -14,6 +15,22 @@ class _VideoTutorialState extends State<VideoTutorial> {
       appBar: AppBar(
         title: Text('Video Tutorials'),
         backgroundColor: musicGreen,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.white,
+              size: 30.0,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardsPage()),
+              );
+
+            },
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(

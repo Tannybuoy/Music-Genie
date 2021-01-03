@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
 import 'package:flutter/widgets.dart';
 import 'package:musicgenie/screens/videotutorials_screen.dart';
-import 'package:lottie/lottie.dart';
+import 'package:musicgenie/screens/flash_screen.dart';
 
 class GeneChord extends StatefulWidget {
   @override
@@ -11,7 +11,6 @@ class GeneChord extends StatefulWidget {
 
 class _GeneChordState extends State<GeneChord>{
   String _selectedLocation;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +18,21 @@ class _GeneChordState extends State<GeneChord>{
       appBar: AppBar(
         title: Text('Gene Chords'),
         backgroundColor: musicGreen,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.white,
+              size: 30.0,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardsPage()),
+              );
+            },
+          )
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

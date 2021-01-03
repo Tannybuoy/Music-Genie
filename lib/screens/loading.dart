@@ -58,7 +58,7 @@ class _LoadingState extends State<Loading> with SingleTickerProviderStateMixin {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Did You Know? Two humans typically share around 99.9% of the same genetic material.',
+                    'Did You Know? Two humans typically share around 99.9% of the same genetic material!',
                     textAlign: TextAlign.center,
                     style: TextStyle(color: musicGreen, fontSize: 18),
                   ),
