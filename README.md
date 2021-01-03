@@ -51,7 +51,7 @@ This was only my second time using Flutter, so I was determined to learn more ab
 ## What I learned
 [Flutter is among the fastest growing skills for software engineers](https://www.xda-developers.com/flutter-android-design-angular-material-fastest-growing-skills-software-engineers/) and I'm super pumped to be on this wagon.
 * Learnt time management and making checklists to keep track of work.
-* Explored the different widgets available in Flutter. [Flutter is among the fastest growing skills for software engineers](https://www.xda-developers.com/flutter-android-design-angular-material-fastest-growing-skills-software-engineers/) and I'm super pumped to be on this wagon.
+* Explored the different widgets available in Flutter. 
 
 ## What's next for music GENiE
 * I believe it will be possible to compare similarity of songs based on whether they generate the same DNA sequence.
