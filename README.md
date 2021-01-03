@@ -16,7 +16,9 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Inspiration
-Inspired by the recent focus on healthcare
+Did you know? [4 chords can play most songs!](https://www.musical-u.com/learn/four-chords-and-the-truth/)
+The idea is inspired by the increasing focus on gene editing. 
+This year's Nobel Prize in Chemistry was for a method developed for genome editing. 
 
 ## What it does
 Play your genes
