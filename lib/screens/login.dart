@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
-import 'package:musicgenie/screens/home_screen.dart';
+import 'package:musicgenie/screens/intro_screen.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -42,7 +42,7 @@ class LoginPage extends StatelessWidget {
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MyHomePage()));
+                    MaterialPageRoute(builder: (context) => Introduction()));
               },
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 100, vertical: 18),

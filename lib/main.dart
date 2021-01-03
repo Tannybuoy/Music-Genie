@@ -6,6 +6,7 @@ Color musicBlue = Color(0xff7cebeb);
 Color musicYellow = Color(0xffffcb00);
 Color musicOrange = Color(0xfffe6600);
 Color musicGreen = Color(0xff009898);
+Color musicGrey = Color(0xff707070);
 
 void main() {
   runApp(MyApp());
