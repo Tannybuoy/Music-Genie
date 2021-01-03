@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
-import 'package:musicgenie/screens/flash_screen.dart';
+import 'package:musicgenie/screens/musicplayer_screen.dart';
 
 
 class Visualiser extends StatefulWidget {
@@ -99,11 +99,11 @@ class _VisualiserState extends State<Visualiser> {
         child: RaisedButton(
           color: musicGreen,
           textColor: Colors.white,
-          child: Text('Flash Cards'),
+          child: Text('Music Player'),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => FlashCardsPage()),
+              MaterialPageRoute(builder: (context) => MusicPlayer()),
             );
           },
         ),
