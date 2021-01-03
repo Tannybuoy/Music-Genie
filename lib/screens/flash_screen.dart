@@ -316,6 +316,28 @@ class FlashCardsPage extends StatefulWidget {
 }
 
 class _FlashCardsPageState extends State<FlashCardsPage> {
+
+  var listing = ["Base Pairing",
+    "Chromatin",
+    "Double Helix",
+    "DNA Polymerase",
+    "Helicase",
+    "Nucleotide",
+    "Transformation",
+    "Replication"];
+
+  var subtitlesData = [
+    "Rule that describes how nucleotides form bonds in DNA; always bond with thymine,guanine, and cytosine",
+    "Loose combination of DNA and proteins that is present during interphase",
+    "Model that compares the structure of a DNA molecule, in which two strands wind another to that of a twisted ladder",
+    "Enzyme that makes bonds between nucleotides forming an identical strand of DNA during replication",
+    "A prokaryote enzyme that uses the hydrolysis of atp to unwind the DNA helix at the replication, allowing single strands to be copied",
+    "Monomer that forms DNA and has a phosphate group, a sugar, and a nitrogen containing base",
+    "Transfer of DNA from one bacterial cell in a solution to another",
+    "Process by which DNA is copied",
+  ];
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -337,7 +359,7 @@ class _FlashCardsPageState extends State<FlashCardsPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 12.0),
                   child: ExpansionTileCard(
                     leading: CircleAvatar(backgroundColor: musicGreen,child: Text('$index')),
-                    title: Text('This is item #$index'),
+                    title: Text(listing[index]),
                     subtitle: Text('Tap to see more!'),
                     children: <Widget>[
                       Divider(
@@ -351,9 +373,7 @@ class _FlashCardsPageState extends State<FlashCardsPage> {
                             horizontal: 16.0,
                             vertical: 8.0,
                           ),
-                          child: Text(
-                            """Hi there, I'm a drop-in replacement for Flutter's ExpansionTile.
-Use me any time you think your app could benefit from being just a bit more Material.""",
+                          child: Text(subtitlesData[index],
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyText2
@@ -372,12 +392,12 @@ Use me any time you think your app could benefit from being just a bit more Mate
                             onPressed: () {},
                             child: Column(
                               children: <Widget>[
-                                Icon(Icons.star),
+                                Icon(Icons.star, color: musicGreen),
                                 Padding(
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 2.0),
                                 ),
-                                Text('Save'),
+                                Text('Save', style: TextStyle(color: musicGreen)),
                               ],
                             ),
                           ),
@@ -387,12 +407,12 @@ Use me any time you think your app could benefit from being just a bit more Mate
                             onPressed: () {},
                             child: Column(
                               children: <Widget>[
-                                Icon(Icons.open_in_browser),
+                                Icon(Icons.open_in_browser, color: musicGreen),
                                 Padding(
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 2.0),
                                 ),
-                                Text('Open'),
+                                Text('Open', style: TextStyle(color: musicGreen)),
                               ],
                             ),
                           ),
@@ -402,12 +422,12 @@ Use me any time you think your app could benefit from being just a bit more Mate
                             onPressed: () {},
                             child: Column(
                               children: <Widget>[
-                                Icon(Icons.share),
+                                Icon(Icons.volume_up, color: musicGreen),
                                 Padding(
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 2.0),
                                 ),
-                                Text('Share'),
+                                Text('Audio', style: TextStyle(color: musicGreen)),
                               ],
                             ),
                           ),

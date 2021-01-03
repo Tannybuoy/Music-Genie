@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:musicgenie/main.dart';
+import 'package:musicgenie/dialogs.dart';
 import 'package:flutter/widgets.dart';
 import 'package:musicgenie/screens/videotutorials_screen.dart';
+import 'package:musicgenie/screens/genechord_screen.dart';
 import 'package:lottie/lottie.dart';
 import 'package:share/share.dart';
 
@@ -10,8 +12,8 @@ class MusicPlayer extends StatefulWidget {
   _MusicPlayerState createState() => _MusicPlayerState();
 }
 
-class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin {
-
+class _MusicPlayerState extends State<MusicPlayer>
+    with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,14 +46,14 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
                   repeat: true,
                   animate: true,
                   height: 100,
-                  width:200,
+                  width: 200,
                 ),
               ],
             ),
           ),
           SizedBox(height: 30),
           Padding(
-            padding: const EdgeInsets.fromLTRB(40,0,40,0),
+            padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
             child: Image.asset('assets/images/musiccontrol.png'),
           ),
           SizedBox(height: 40),
@@ -62,11 +64,27 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
                 color: musicYellow,
                 textColor: Colors.white,
                 child: Text("Download"),
-                onPressed: () {
-                  Navigator.push(
+                onPressed: () async {
+                  final action = await Dialogs.yesAbortDialog(
                     context,
-                    MaterialPageRoute(builder: (context) => VideoTutorial()),
+                    'Download Gene Music',
+                    'Click Audio to download as mp3 file and Click Video to download along with the animation',
                   );
+                  if (action == DialogAction.yes) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => VideoTutorial(),
+                      ),
+                    );
+                  } else {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => VideoTutorial(),
+                      ),
+                    );
+                  }
                 },
               ),
               SizedBox(width: 15),
@@ -82,11 +100,11 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
               RaisedButton(
                 color: musicGreen,
                 textColor: Colors.white,
-                child: Text("Videos"),
+                child: Text("Tutorial"),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => VideoTutorial()),
+                    MaterialPageRoute(builder: (context) => GeneChord()),
                   );
                 },
               ),

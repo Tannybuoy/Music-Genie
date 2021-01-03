@@ -8,7 +8,6 @@ class VideoTutorial extends StatefulWidget {
 }
 
 class _VideoTutorialState extends State<VideoTutorial> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +21,100 @@ class _VideoTutorialState extends State<VideoTutorial> {
             SizedBox(height: 5.0,),
             Image.asset("assets/images/helixtop.png"),
             SizedBox(height: 10.0,),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0, top: 5.0),
+              child: Container(
+                height: 30.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+
+                    Container(
+                      height: 30.0,
+                      decoration: BoxDecoration(
+                          color: Colors.black45,
+                          borderRadius: BorderRadius.circular(30.0),
+                          border: Border.all(color: Colors.grey)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0, bottom: 5.0),
+                        child: Text("Keyboard Tutorials", style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16.0
+                        ),),
+                      ),
+                    ),
+                    SizedBox(width: 10.0,),
+                    Container(
+                      height: 30.0,
+                      decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(30.0),
+                          border: Border.all(color: Colors.grey)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0, bottom: 5.0),
+                        child: Text("4 Chord Songs", style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16.0
+                        ),),
+                      ),
+                    ),
+                    SizedBox(width: 10.0,),
+                    Container(
+                      height: 30.0,
+                      decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(30.0),
+                          border: Border.all(color: Colors.grey)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0, bottom: 5.0),
+                        child: Text("Best Piano", style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16.0
+                        ),),
+                      ),
+                    ),
+                    SizedBox(width: 10.0,),
+                    Container(
+                      height: 30.0,
+                      decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(30.0),
+                          border: Border.all(color: Colors.grey)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0, bottom: 5.0),
+                        child: Text("Mixed Instrumentals", style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16.0
+                        ),),
+                      ),
+                    ),
+                    SizedBox(width: 10.0,),
+                    Container(
+                      height: 30.0,
+                      decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(30.0),
+                          border: Border.all(color: Colors.grey)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0, bottom: 5.0),
+                        child: Text("Gene Music", style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16.0
+                        ),),
+                      ),
+                    ),
+
+                    SizedBox(width: 20.0,),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 20.0,),
             Container(
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
