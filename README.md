@@ -25,6 +25,23 @@ This year's Nobel Prize in Chemistry was for a method developed for genome editi
 * Additionally, you can learn playing a music instrument of your choice on our platform.
 * You can visualise any existing 4 chord music as a DNA sequence.
 
+### User Flow and Screens
+* **Splash Screen** - The logo and motto!
+* **Onboarding Screen** - to explain the features available. Learn about genetics, convert your DNA or any DNA sequence to music, watch tutorials for different instruments and download DNA sequence correspondence to existing 4 chord music.
+* **Welcome Screen** - Welcome to music Genie
+* **LogIn Screen** - Hello Genie
+* **Introduction** - Adenine, Thymine, Cytosine and Guanine are introduced in the way of images. Cross-pairing doesn't work can be visualised. AT and CG fit with each other like a puzzle.
+* **Flash Cards** - To familiarise yourself with the different terms in genetics. You can save terms you wish to look at later, watch videos on the same or even listen to the definition in audio format.
+* **Visualiser - Enter a DNA sequence and visualise it in animation format. 
+* **Music Player** - To convert the DNA sequence into an audio format. You then get the option of downloading the animation, or only downloading the audio. You can also share the same on your social media handles. We then proceed to looking at the chords and the mapping.
+* **Gene Chords** - You can see the mapping which has been done. By default the instrument will be a piano, but you can also explore chords of the other instrument like Drums, Guitar, Violin and more. Mapping is done like 
+``` 1. CG - E major chord ```
+``` 2. GC - B major chord ```
+``` 3. AT - C# minor chord ```
+``` 4. TA - A major chord ```
+* **Video Tutorials** - Here you can learn the chords of different instruments, look at the DNA music produced by other people and more. 
+* **Demo Video** - On clicking a video, you can watch it and then download the Chord music as well as the animated DNA sequence for it.
+
 ## How I built it
 I built it using Flutter and dart. I first did my research and understood the basics of genetics, genes, DNA and ATCG building blocks. Then I did basic pen-paper wireframing, post which I made a User Experience flow in Adobe XD. Then I made a Flutter project in Android Studio. For most issues faced I used stackoverflow.
 Then while coding, I explored the need for various plugins and decided to define a tasklist for myself. Source for the terms is [DNA Flashcards](https://quizlet.com/4348465/dna-flashcards/).
